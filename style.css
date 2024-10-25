@@ -1,0 +1,59 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+body {
+  margin: 60px 20px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  background-color: #FAFAFA;
+}
+
+h1 {
+  font-weight: medium;
+  font-size: 28px;
+  margin: 40px 0 10px 0;
+}
+
+h2 {
+  font-weight: medium;
+  font-size: 16px;
+  margin: 60px 0 15px 0;
+}
+
+p {
+  font-weight: light;
+  font-size: 16px;
+  color: #8B8B8B;
+}
+
+.hlavni p {
+  margin: 30px 0;
+}
+
+.sluzby p {
+  margin: 15px 0 30px 0;
+}
+
+.ramecky p {
+  font-weight: light;
+  font-size: 13px;
+}
+
+.tlacitko {
+  padding: 10px 30px;
+  font-size: 14px;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.dobrodruzstvi {
+  background-color: #407BFF;
+}
+
+.pohoda {
+  background-color: #8B8B8B;
+  margin-top: 10px;
+}
+
