@@ -8,20 +8,28 @@ body {
   background-color: #FAFAFA;
 }
 
+.traveler {
+  width: calc((350 / 500) * 100%);
+}
+
 h1 {
-  font-weight: medium;
+  font-weight: 500;
   font-size: 28px;
   margin: 40px 0 10px 0;
 }
 
+/* .obdelnicek {
+  margin: 0;
+} */
+
 h2 {
-  font-weight: medium;
+  font-weight: 500;
   font-size: 16px;
   margin: 60px 0 15px 0;
 }
 
 p {
-  font-weight: light;
+  font-weight: 300;
   font-size: 16px;
   color: #8B8B8B;
 }
@@ -30,12 +38,17 @@ p {
   margin: 30px 0;
 }
 
-.sluzby p {
+.popis p {
   margin: 15px 0 30px 0;
 }
 
+.tlacitka p {
+  margin: 0;
+  font-weight: 400;
+}
+
 .ramecky p {
-  font-weight: light;
+  font-weight: 300;
   font-size: 13px;
 }
 
@@ -57,3 +70,146 @@ p {
   margin-top: 10px;
 }
 
+.sluzba {
+  display: flex;
+  background-color: white;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: #407BFF1F 1px 5px 10px;
+  align-items: center;
+}
+
+.sluzba p {
+  margin: 0 0 0 30px;
+  text-align: left;
+}
+
+@media screen and (min-width: 640px) {
+  .traveler {
+    width: calc((400 / (400 + 185 + 185)) * 100%);
+  }
+
+  h1 {
+    margin: 30px 0 10px 0;
+  }
+
+  h2 {
+    margin: 80px 0 15px 0;
+  }
+
+  .popis p {
+    margin: 15px 110px 40px 110px;
+  }
+
+  .uvod p {
+    margin: 30px 110px;
+  }
+
+  .tlacitka p {
+    margin: 0;
+  }
+
+  .tlacitka {
+    display: flex;
+    justify-content: center;
+  }
+
+  .dobrodruzstvi {
+    margin: 0 10px 0 0;
+  }
+  .pohoda {
+    margin: 0 0 0 10px;
+  }
+
+  .ramecky {
+    display: flex;
+  }
+
+  .sluzba {
+    display: block;
+    padding: 40px 15px;
+  }
+
+  .sluzba p {
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  
+  body {
+    width: 1040px;
+    margin: 60px auto;
+    text-align: left;
+  }
+  
+  .hlavni {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .uvod {
+    order: 1;
+    flex: 0 1 490px;
+  }
+  
+  .obrazek {
+    order: 2;
+    flex: 0 1 490px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .traveler {
+    width: 100%;
+    max-width: 425px;
+  }
+ 
+  .tlacitka {
+    justify-content: left;
+  }
+
+  .sluzby {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .popis {
+    flex: 0 1 430px;
+  }
+
+  .kancelar .ramecky {
+    order: 1;
+  }
+
+  .kancelar .popis {
+    order: 2;
+  }
+
+  .ramecky {
+    flex: 0 1 550px;
+    justify-content: space-between;
+  }
+  
+  .kancelar {
+    margin: 80px 0;
+  }
+
+  .sluzba {
+    text-align: center;
+    flex: 0 1 calc((100% - 40px) / 3);
+    margin: 0;
+  }
+
+  h2 {
+    margin: 0 0 15px 0;
+  }
+
+  .popis p {
+    margin: 15px 0 0 0;
+  }
+}
