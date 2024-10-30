@@ -18,9 +18,12 @@ h1 {
   margin: 40px 0 10px 0;
 }
 
-/* .obdelnicek {
-  margin: 0;
-} */
+.obdelnicek {
+  width: 60px;
+  height: 2px;
+  background-color: #407BFF;
+  margin: 0 auto;
+}
 
 h2 {
   font-weight: 500;
@@ -145,6 +148,10 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .obdelnicek {
+    margin: 0;
   }
 
   .uvod {
