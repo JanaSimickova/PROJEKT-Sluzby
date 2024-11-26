@@ -50,6 +50,12 @@ p {
   font-weight: 400;
 }
 
+.tlacitka {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .ramecky p {
   font-weight: 300;
   font-size: 13px;
@@ -61,7 +67,7 @@ p {
   color: white;
   border-radius: 30px;
   text-decoration: none;
-  display: inline-block;
+  width: fit-content;
 }
 
 .dobrodruzstvi {
@@ -105,12 +111,12 @@ p {
     margin: 15px 110px 40px 110px;
   }
 
-  .obsah p {
+  .uvod p {
     margin: 30px 110px;
   }
 
   .tlacitka {
-    display: flex;
+    flex-direction: row;
     justify-content: center;
   }
 
@@ -159,7 +165,7 @@ p {
     flex: 0 1 490px;
   }
 
-  .obsah p {
+  .uvod p {
     margin: 30px 0;
   }
   
